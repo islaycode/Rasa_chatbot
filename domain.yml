@@ -1,0 +1,40 @@
+intents:
+  - greet
+  - goodbye
+  - bot_challenge
+  - appointment
+  - country
+  - name
+
+entities:
+  - name
+  - country
+
+slots:
+  name:
+    type: text
+  country:
+    type: text
+
+responses:
+  utter_greet:
+  - text: "Hi Welcome to Ayur, would you like to book an appoint, Please Enter Your name?"
+
+  utter_goodbye:
+  - text: "Bye Have a nice day "
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_appointment:
+  - text: "Sure, when would like to book an appointment?"
+
+  utter_name:
+  - text: "Please enter your name"
+
+  utter_country:
+  - text: "Please enter your country and get your booking id?"
+
+  utter_show_name_country:
+  - text: "Your appointment has been fixed for Tommorow, Your name is {name} country is {country} and booking id is P:010 ."
+
